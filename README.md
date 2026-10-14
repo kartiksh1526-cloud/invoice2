@@ -29,9 +29,10 @@ Open `http://localhost:3000`. The dashboard opens directly, without login. You c
 
 ## Deploy to Vercel
 
-1. Import `kartiksh1526-cloud/invoice` with the repository root (`.`) as the project root and **Other** as the framework preset.
-2. Keep the configured output directory as `frontend` (as set in `vercel.json`).
-3. Deploy the static site.
-4. Open **My Items** to edit the 36 preloaded products, or add your own items.
+1. In Vercel, create a project and import `kartiksh1526-cloud/invoice2`.
+2. Set the project root to the repository root (`.`) and select **Other** as the framework preset.
+3. Use the repository's deployment settings: build command `npm run build`, output directory `dist`, and no environment variables.
+4. Deploy. The build copies the static application from `frontend/` into Vercel's `dist/` output. Opening `/` goes to the dashboard.
+5. Open **My Items** to edit the 36 preloaded products, or add your own items.
 
 Catalog and quotation data are stored only in browser `localStorage`; they are not synchronized between devices.
